@@ -1,0 +1,61 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: url('loading_screen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  /* height: 200px; */
+  width: 500px;
+  background-color: #5e5e5ecc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 15px;
+  display: grid;
+  grid-template-areas:  "title login"
+                        "text login";
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  color: #09a3e0;
+  font-family: 'Times New Roman', Times, serif;
+  grid-area: title;
+}
+
+.text {
+  grid-area: text;
+  color: white;
+}
+.empty {
+  grid-area: empty;
+}
+
+button {
+  grid-area: login;
+  height: 30px;
+  width: 100px;
+  background-color: #09a3e0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px #202020;
+  transition: 0.3s;
+  color: white;
+}
+
+button:hover {
+  box-shadow: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
