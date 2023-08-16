@@ -1,0 +1,12 @@
+.cops {
+  float: right;
+}
+
+.star {
+  height: 30px;
+  width: 30px;
+  float: left;
+  position: relative;
+  scale: 1.1;
+  color: #fff;
+}

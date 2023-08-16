@@ -2,11 +2,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+  <link rel='stylesheet' type='text/css' media='screen' href='hud.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='stars.css'>
 </head>
 <body>
-  <div id="moneyhud">
-    <span id="money" class="money">0</span>$
+  <div class="cops">
+    <div class="star">
+      <span class="material-icons">star_outline</span>
+    </div>
+    <div class="star">
+      <span class="material-icons">star_outline</span>
+    </div>
+    <div class="star">
+      <span class="material-icons">star_outline</span>
+    </div>
+    <div class="star">
+      <span class="material-icons">star_outline</span>
+    </div>
+    <div class="star">
+      <span class="material-icons">star_outline</span>
+    </div>
+  </div>
+  <div class="hud">
+    <div class="panel cash">
+      <div class="icon">
+        <span class="material-icons">attach_money</span>
+      </div>
+      <div class="text">
+        $<span id="cash">0</span>
+      </div>
+    </div>
+    <div class="panel dirtycash">
+      <div class="icon">
+        <span class="material-icons">currency_bitcoin</span>
+      </div>
+      <div class="text">
+        $<span id="dirtycash">0</span>
+      </div>
+    </div>
+    <div class="panel health">
+      <div class="icon">
+        <span class="material-icons">emergency</span>
+      </div>
+      <div class="text">
+        <span id="health">0</span>%
+      </div>
+    </div>
+    <div class="panel cardio">
+      <div class="icon">
+        <span class="material-icons">bolt</span>
+      </div>
+      <div class="text">
+        <span id="cardio">0</span>%
+      </div>
+    </div>
+    <div class="panel food">
+      <div class="icon">
+        <span class="material-icons">lunch_dining</span>
+      </div>
+      <div class="text">
+        <span id="food">0</span>%
+      </div>
+    </div>
+    <div class="panel water">
+      <div class="icon">
+        <span class="material-icons">water_drop</span>
+      </div>
+      <div class="text">
+        <span id="water">0</span>%
+      </div>
+    </div>
+    <div class="panel voice">
+      <div class="icon">
+        <span class="material-icons">mic</span>
+        <!-- <span class="material-icons">mic_off</span> -->
+      </div>
+      <div class="text">
+        <span id="voice">0</span>m
+      </div>
+    </div>
+    <!-- Rathhaus
+    Fahrzeughändler
+    Zulassungsstelle
+    Banken (Keine Automaten)
+    FruitTalk (Handyvertrag)
+    Apotheken
+    Hotels
+    Parkplätze
+    Metro
+  -->
   </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
