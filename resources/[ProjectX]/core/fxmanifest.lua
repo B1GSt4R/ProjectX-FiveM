@@ -9,18 +9,20 @@ author 'B1GSt4R'
 description 'Project X Core Project'
 version '0.0.1'
 
-loadscreen 'loading/index.html'
-ui_page 'hud/index.html'
+loadscreen 'html/loading/index.html'
+
+ui_page 'html/hud/index.html'
 
 files {
-  "loading/*",
-  "hud/*",
+  "html/loading/*",
+  "html/hud/*",
 }
 
 client_scripts {
-  'config.lua',
-  'cash.lua',
-  'speedo.lua',
-  'veh.lua',
-  'npc.lua',
+  'client/config.lua',
+  'client/npc.lua',
+  'client/hud.lua',
+  'client/speedo.lua',
+  'client/veh.lua',
+  'client/spawn.lua',
 }
