@@ -10,7 +10,7 @@ RegisterCommand('veh', function(src, args, raw)
 
     local spawned = CreateVehicle(vehiclehash, x, y, z, GetEntityHeading(PlayerPedId()+90, 1, 0))
     SetVehicleNumberPlateText(spawned, "B1GSt4R")
-    notify("~g~Vehicle Spawned")
+    notify("~g~"+vehicle+" Spawned")
   end)
 end, false)
 
