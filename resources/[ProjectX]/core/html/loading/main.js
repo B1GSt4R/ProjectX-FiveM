@@ -15,7 +15,7 @@ const handler = {
   performMapLoadFunction(data){
     ++current;
     document.querySelector(".progress").style.left = "0%";
-    document.querySelector(".progress").style.width = ((current / count) * 100) + "%";
+    document.querySelector(".progress").style.width = ((data.idx / count) * 100) + "%";
   }
 }
 

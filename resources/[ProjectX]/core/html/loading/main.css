@@ -1,20 +1,28 @@
 body {
-  background: url('loading_screen.jpg');
-  background-repeat: no-repeat;
+  background: url('loading_screen.jpg') no-repeat;
   background-size: cover;
   padding: 0;
   margin: 0;
+  backdrop-filter: blur(15px);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: block;
 }
 
 .loadbar {
   background-color: #727272;
-  width: calc(100% - 30px);
+  width: calc(100% - 250px);
   height: 30px;
-  position: fixed;
-  bottom: 0;
-  margin: 15px;
   overflow: hidden;
   border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid #353535; */
 }
 
 .progress {
@@ -22,4 +30,56 @@ body {
   width: 0%;
   height: 30px;
   border-radius: 15px;
+  /* border-right: 1px solid #353535; */
 }
+
+.title {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -150px;
+  text-align: center;
+}
+
+.social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  display: flex;
+  gap: 50px;
+}
+
+.panel {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  border: 1px solid #353535;
+  padding: 5px;
+  color: #fff;
+  background-color: #72727255;
+  position: relative;
+  scale: 1;
+  transition: 0.3s;
+}
+
+.panel:hover {
+  scale: 1.3;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.panel > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+}
+
