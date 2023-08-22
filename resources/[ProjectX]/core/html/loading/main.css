@@ -22,27 +22,41 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid #353535; */
 }
 
 .progress {
   background-color: #09a3e0;
-  width: 0%;
+  width: 250px;
   height: 30px;
   border-radius: 15px;
-  /* border-right: 1px solid #353535; */
+  animation: loadingbar 3s linear infinite;
 }
-
 .title {
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: cursive;
   font-size: 1.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: -150px;
+  margin-top: -130px;
   text-align: center;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 4em;
+  margin: 0;
+  transform: rotate(-20deg);
+  margin-top: 10px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  margin-left: -200px;
+  margin-bottom: -30px;
+  transform: rotate(5deg);
 }
 
 .social {
@@ -66,6 +80,7 @@ body {
   position: relative;
   scale: 1;
   transition: 0.3s;
+  box-shadow: 0px 0px 10px 2px #353535;
 }
 
 .panel:hover {
@@ -83,3 +98,11 @@ body {
   width: 100px;
 }
 
+@keyframes loadingbar {
+  0% {
+    transform: translateX(-250px)
+  }
+  100% {
+    transform: translateX(90vw)
+  }
+}
