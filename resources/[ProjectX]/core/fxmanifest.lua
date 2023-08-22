@@ -15,6 +15,7 @@ ui_page 'html/hud/index.html'
 
 files {
   "html/loading/*",
+  "html/loading/files/*",
   "html/hud/*",
 }
 

@@ -1,7 +1,7 @@
 /* CSSTidy 1.7.3: Tue, 22 Aug 2023 14:51:55 -0500 */
 body {
   backdrop-filter: blur(15px);
-  background: url(loading_screen.jpg) no-repeat;
+  background: url('files/loading_screen.jpg') no-repeat;
   background-size: cover;
   margin: 0;
   padding: 0
