@@ -59,3 +59,20 @@ body {
   transform-origin: bottom left;
   border-top: 3px solid #0ef;
 }
+
+.left {
+  position: relative;
+  /* position: absolute; */
+  display: flex;
+  margin: 15px;
+  flex-flow: column nowrap;
+  color: aliceblue;
+}
+
+.right {
+  /* position: relative; */
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
